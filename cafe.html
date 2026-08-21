@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panchase Coffee House — Terrace to Table, Kathmandu</title>
+<meta name="description" content="Single-origin Nepali coffee grown across the eastern terraces, roasted in Kathmandu.">
+
+<!-- Fonts: a warm high-contrast serif for personality, a clean grotesque for body text,
+     and a mono face for the data-like bits (altitude, prices, hours). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__mark">Panchase <span>COFFEE HOUSE</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#story">Story</a></li>
+    <li><a href="#origin">Origin</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================
+     HERO
+     Signature moment: drifting topographic contour lines behind
+     a cup with looping steam. The contours are the same shape
+     language used later for the altitude dial in "Origin".
+     ============================================================ -->
+<header class="hero" id="top">
+  <div class="hero__contours" aria-hidden="true">
+    <svg viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice">
+      <g class="contour-drift">
+        <path class="contour-line" d="M-50,600 C150,560 250,640 450,600 C650,560 750,640 950,600 C1150,560 1250,640 1450,600" />
+        <path class="contour-line" d="M-50,650 C150,610 250,690 450,650 C650,610 750,690 950,650 C1150,610 1250,690 1450,650" />
+        <path class="contour-line is-brass" d="M-50,700 C150,660 250,740 450,700 C650,660 750,740 950,700 C1150,660 1250,740 1450,700" />
+      </g>
+      <g class="contour-drift-slow">
+        <path class="contour-line" d="M-50,500 C200,440 300,540 500,480 C700,420 800,520 1000,460 C1200,400 1300,500 1450,440" />
+        <path class="contour-line" d="M-50,420 C200,360 300,460 500,400 C700,340 800,440 1000,380 C1200,320 1300,420 1450,360" />
+      </g>
+    </svg>
+  </div>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div>
+      <p class="hero__eyebrow">Kathmandu · Est. 2004 · 1,300–1,800m</p>
+      <h1 class="hero__headline">Coffee that still remembers <em>the mountain</em> it grew on.</h1>
+      <p class="hero__sub">Single-origin Arabica from the eastern terraces of Nepal, roasted a short walk from Durbar Square, and poured the way our farmers taught us to drink it — slow, and without apology.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--solid">See the menu</a>
+        <a href="#origin" class="btn btn--outline">Where it's grown</a>
+      </div>
+    </div>
+
+    <div class="hero__cup" aria-hidden="true">
+      <svg viewBox="0 0 240 260">
+        <!-- steam -->
+        <path class="steam-path steam-1" d="M95,110 C85,95 105,85 95,70 C85,55 105,45 98,30" />
+        <path class="steam-path steam-2" d="M120,110 C110,95 130,85 120,70 C110,55 130,45 123,30" />
+        <path class="steam-path steam-3" d="M145,110 C135,95 155,85 145,70 C135,55 155,45 148,30" />
+        <!-- cup -->
+        <path d="M50,120 L190,120 L178,215 C176,228 165,236 152,236 L88,236 C75,236 64,228 62,215 Z" fill="none" stroke="#f1e9d8" stroke-width="3"/>
+        <path d="M190,132 C214,132 214,178 190,178" fill="none" stroke="#f1e9d8" stroke-width="3"/>
+        <ellipse cx="120" cy="120" rx="70" ry="10" fill="#c69a3b" opacity="0.85"/>
+        <line x1="60" y1="236" x2="180" y2="236" stroke="#f1e9d8" stroke-width="3" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero__scroll"><span class="hero__scroll-line"></span> Scroll</div>
+</header>
+
+<!-- ============================================================
+     STORY
+     ============================================================ -->
+<section class="section section--light" id="story">
+  <div class="story__grid">
+    <div class="story__figure reveal">
+      <div class="story__figure-mark">Fikkal &amp; the eastern hills<br>— where the first cherries were picked</div>
+    </div>
+    <div>
+      <p class="eyebrow reveal">Our story</p>
+      <h2 class="reveal">Started with one roaster and a lot of stubbornness.</h2>
+      <p class="reveal">In 2004, coffee was still a strange thing to order in Kathmandu — most people wanted tea, and most tourists brought their own instant sachets. We opened anyway, with a single roaster in a room the size of a garage, and beans carried down from the hills in sacks on someone's back.</p>
+      <p class="reveal">Two decades on, we still buy directly from the same families who sold us that first harvest. No brokers in between, no beans we haven't tasted ourselves. It's slower than it needs to be. We've decided that's fine.</p>
+      <blockquote class="reveal">"We're not trying to be Seattle. We're trying to be the best version of a coffee house in Kathmandu — and that's a different, better goal."</blockquote>
+    </div>
+  </div>
+</section>
+
+<div class="terrace-edge" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NUMBERS
+     ============================================================ -->
+<section class="numbers">
+  <div class="numbers__grid">
+    <div class="numbers__item reveal">
+      <div class="numbers__value" data-count="21" data-suffix=" yrs">0</div>
+      <div class="numbers__label">Roasting in Kathmandu since 2004</div>
+    </div>
+    <div class="numbers__item reveal">
+      <div class="numbers__value" data-count="46" data-suffix="">0</div>
+      <div class="numbers__label">Partner farming families across the eastern hills</div>
+    </div>
+    <div class="numbers__item reveal">
+      <div class="numbers__value" data-count="1800" data-suffix="m">0</div>
+      <div class="numbers__label">Highest elevation our beans are picked at</div>
+    </div>
+    <div class="numbers__item reveal">
+      <div class="numbers__value" data-count="6" data-suffix="">0</div>
+      <div class="numbers__label">Houses open across the Kathmandu Valley</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ORIGIN — signature interactive altitude dial
+     ============================================================ -->
+<section class="section section--light origin" id="origin">
+  <div class="origin__head reveal">
+    <p class="eyebrow" style="justify-content:center; color:var(--clay);">Origin</p>
+    <h2>Altitude changes the cup.</h2>
+    <p>Our beans come from farms between 1,300 and 1,800 metres. Drag the marker to feel how a few hundred metres of elevation changes what ends up in the cup.</p>
+  </div>
+
+  <div class="altitude reveal">
+    <div class="altitude__dial">
+      <div>
+        <div class="altitude__track-wrap">
+          <div class="altitude__track" aria-hidden="true"></div>
+          <svg class="altitude__terrain" viewBox="0 0 120 340" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,340 L10,300 L25,320 L35,260 L50,290 L65,210 L80,250 L95,150 L110,190 L120,90 L120,340 Z" fill="#204133" opacity="0.5"/>
+          </svg>
+          <input type="range" min="1300" max="1800" step="10" value="1550" class="altitude__slider" id="altitudeSlider" aria-label="Altitude in metres">
+        </div>
+        <div class="altitude__readout">
+          <div class="altitude__readout-value" id="altitudeValue">1,550</div>
+          <div class="altitude__readout-label">metres above sea level</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="altitude__panel">
+      <span class="region" id="altitudeRegion">Mid-terrace · Ilam district</span>
+      <h3 id="altitudeTitle">Balanced &amp; round</h3>
+      <div class="altitude__notes" id="altitudeNotes">
+        <span>Cocoa</span><span>Toasted almond</span><span>Soft caramel</span>
+      </div>
+      <p id="altitudeDesc">Grown on gentler, sun-fed terraces, these beans ripen faster and carry a rounder, lower-acid body — the cup most of our regulars order without thinking twice.</p>
+    </div>
+  </div>
+</section>
+
+<div class="terrace-edge" aria-hidden="true"></div>
+
+<!-- ============================================================
+     MENU
+     ============================================================ -->
+<section class="section section--dark menu" id="menu">
+  <div class="menu__head reveal">
+    <p class="eyebrow" style="color:var(--brass-soft);">Menu</p>
+    <h2>What we pour</h2>
+    <p>A short list, brewed properly. Prices in Nepali rupees.</p>
+  </div>
+
+  <div class="menu__grid reveal-stagger">
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Terrace Pour-over</span>
+        <span class="menu-card__price">Rs. 340</span>
+      </div>
+      <p class="menu-card__desc">Single origin, brewed to order. Ask which farm is pouring today — it changes weekly.</p>
+      <span class="menu-card__tag">Single origin</span>
+    </article>
+
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Cappuccino</span>
+        <span class="menu-card__price">Rs. 260</span>
+      </div>
+      <p class="menu-card__desc">A house-blend double shot, steamed milk, poured a little thicker than most places dare.</p>
+    </article>
+
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Himalayan Cold Brew</span>
+        <span class="menu-card__price">Rs. 300</span>
+      </div>
+      <p class="menu-card__desc">Steeped for eighteen hours, served over ice with a twist of orange peel.</p>
+      <span class="menu-card__tag">Seasonal</span>
+    </article>
+
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Masala Chai</span>
+        <span class="menu-card__price">Rs. 180</span>
+      </div>
+      <p class="menu-card__desc">Because not everyone at the table drinks coffee, and this one's from our tea garden friends in Ilam.</p>
+    </article>
+
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Sel Roti &amp; Coffee</span>
+        <span class="menu-card__price">Rs. 220</span>
+      </div>
+      <p class="menu-card__desc">Fried rice-flour bread, warm, with a cup of your choice on the side.</p>
+    </article>
+
+    <article class="menu-card">
+      <div class="menu-card__row">
+        <span class="menu-card__name">Affogato</span>
+        <span class="menu-card__price">Rs. 320</span>
+      </div>
+      <p class="menu-card__desc">A shot of espresso poured tableside over house-made vanilla bean ice cream.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATIONS
+     ============================================================ -->
+<section class="section section--light" id="locations">
+  <div class="menu__head reveal" style="color:var(--ink);">
+    <p class="eyebrow" style="color:var(--clay);">Locations</p>
+    <h2>Three houses, one roast</h2>
+    <p>Each one keeps its own hours and its own regulars.</p>
+  </div>
+
+  <div class="locations__grid reveal-stagger">
+    <div class="location-card">
+      <p class="eyebrow">Flagship</p>
+      <h3>Thamel</h3>
+      <p>Narsingh Chowk, a few doors down from the old bookshops. Roasting happens on-site most mornings.</p>
+      <div class="location-card__hours">Mon–Sun · 7:00 – 21:00</div>
+    </div>
+    <div class="location-card">
+      <p class="eyebrow">Riverside</p>
+      <h3>Jhamsikhel</h3>
+      <p>Quieter, more laptops than backpacks. Good light in the afternoon, better in the evening.</p>
+      <div class="location-card__hours">Mon–Sun · 7:30 – 22:00</div>
+    </div>
+    <div class="location-card">
+      <p class="eyebrow">Newest</p>
+      <h3>Boudha</h3>
+      <p>Steps from the stupa. Small, mostly standing room, and the busiest on weekend mornings.</p>
+      <div class="location-card__hours">Mon–Sun · 6:30 – 20:00</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section section--dark testimonials">
+  <div class="testimonials__grid reveal-stagger">
+    <div class="testimonial">
+      <p>"The pour-over changes every week and somehow it's never worse, just different. That's rare."</p>
+      <cite>— A regular, Jhamsikhel</cite>
+    </div>
+    <div class="testimonial">
+      <p>"First place in the city where I didn't have to explain what a flat white was."</p>
+      <cite>— Weekend visitor, Thamel</cite>
+    </div>
+    <div class="testimonial">
+      <p>"They'll tell you which farm your beans came from without checking a card. That's how you know."</p>
+      <cite>— A regular, Boudha</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VISIT / NEWSLETTER
+     ============================================================ -->
+<section class="section section--light visit" id="visit">
+  <div class="reveal">
+    <p class="eyebrow" style="color:var(--clay);">Visit</p>
+    <h2>Come sit with us.</h2>
+    <p>All three houses are walk-in only. If a table's full, the coffee's usually worth the ten-minute wait outside.</p>
+    <div class="visit__actions">
+      <a href="#locations" class="btn btn--outline">Get directions</a>
+      <a href="#menu" class="btn btn--outline">View the menu</a>
+    </div>
+  </div>
+
+  <form class="visit__form reveal" id="newsletterForm">
+    <h3>New harvest, first pour</h3>
+    <p>One email when a new origin lot goes on the menu. No spam, no franchise pitches.</p>
+    <div class="visit__form-row">
+      <input type="email" placeholder="you@example.com" required aria-label="Email address">
+      <button type="submit" class="btn btn--solid">Notify me</button>
+    </div>
+    <p class="visit__form-note" id="newsletterNote">We'll only write when there's actually something new to say.</p>
+  </form>
+</section>
+
+<footer>
+  <a href="#top" class="nav__mark">Panchase <span>COFFEE HOUSE</span></a>
+  <p>© 2026 Panchase Coffee House, Kathmandu. All rights brewed.</p>
+  <div class="footer__socials">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script src="cafe.js"></script>
+</body>
+</html>

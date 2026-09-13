@@ -70,7 +70,29 @@ const altitudeTitle = document.getElementById('altitudeTitle');
 const altitudeNotes = document.getElementById('altitudeNotes');
 const altitudeDesc = document.getElementById('altitudeDesc');
 
-
+const altitudeBands = [
+  {
+    max: 1450,
+    region: 'Low-terrace · Kavre district',
+    title: 'Round & easy-drinking',
+    notes: ['Milk chocolate', 'Brown sugar', 'Low acidity'],
+    desc: 'Warmer, lower ground means faster-ripening cherries and a gentle, easy cup — the one we hand new coffee drinkers first.'
+  },
+  {
+    max: 1650,
+    region: 'Mid-terrace · Ilam district',
+    title: 'Balanced & round',
+    notes: ['Cocoa', 'Toasted almond', 'Soft caramel'],
+    desc: 'Grown on gentler, sun-fed terraces, these beans ripen faster and carry a rounder, lower-acid body — the cup most of our regulars order without thinking twice.'
+  },
+  {
+    max: 1800,
+    region: 'High-terrace · Panchthar district',
+    title: 'Bright & floral',
+    notes: ['Stone fruit', 'Jasmine', 'Citrus acidity'],
+    desc: 'Cooler nights and slower ripening at this elevation push more acidity and aromatics into the cherry — closer to what a specialty roaster in Europe would fight over.'
+  }
+];
 
 function updateAltitudePanel(value) {
   const band = altitudeBands.find(b => value <= b.max) || altitudeBands[altitudeBands.length - 1];
